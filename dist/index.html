@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Number Converter</title>
+		<link rel="stylesheet" href="./assets/style.css" />
+		<script src="../src/app.js" defer></script>
+		<!-- <script src="assets\scripts\1d2f90e0085002f04ff9.js" defer></script> -->
+	</head>
+	<body>
+		<div class="flex-container">
+			<div class='flex-item-1'>
+				<h1>Number Converter</h1>
+				<h3>
+					This app converts Binary digits into its equivalent Decimal number.
+					Enter 0 or 1 into the blank field and press Convert to view the
+					result.
+				</h3>
+			</div>
+			<div class="flex-item-2">
+				<!-- <label for="#" class="switch">
+					<input type="checkbox">
+					<span class="slider"></span>
+				</label> -->
+				<label for="#" id="text">From Decimal to Binary:</label>
+				<label class="switch">
+					<input type="checkbox" id="checkbox">
+					<span class="slider"></span>
+			</label>
+				
+				<label for="#" id="input-field">Binary digits:</label>
+				<input type="text" name="" id="user-input" />
+				<div class="button">
+					<button>Convert</button>
+				</div>
+				<label for="#" id="output-field">Decimal value:</label>
+				<input type="text" name="" id="result">
+			</div>
+		</div>
+
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBQALXOgS1sYEf0JpqOaks0VQ2mrHHWedc",
+    authDomain: "binary-converter-5fac6.firebaseapp.com",
+    databaseURL: "https://binary-converter-5fac6.firebaseio.com",
+    projectId: "binary-converter-5fac6",
+    storageBucket: "binary-converter-5fac6.appspot.com",
+    messagingSenderId: "256129663870",
+    appId: "1:256129663870:web:f39c7e95a6ea35ca2c692f",
+    measurementId: "G-T12MM0YM43"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+	</body>
+</html>
